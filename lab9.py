@@ -1,4 +1,5 @@
 
+import sys
 def product_details(product_id, name, quantity, price):
     return (
         f"Product ID: {product_id}\n"
@@ -9,9 +10,9 @@ def product_details(product_id, name, quantity, price):
 
 
 if __name__ == "__main__":
-    pid = int(input("Enter Product ID: "))
-    name = input("Enter Product Name: ")
-    quantity = int(input("Enter Quantity: "))
-    price = float(input("Enter Price: "))
+    pid = int(sys.argv[1])
+    name = (sys.argv[2])
+    quantity = int(sys.srgv[3])
+    price = float(sys.argv[4])
 
     print(product_details(pid, name, quantity, price))
